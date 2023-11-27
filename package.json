@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12",
+    "check-pages": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-jshint": "latest",
+    "gulp-strip-debug": "4.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "latest",
+    "jshint": "^2.12.0"
+  },
+  "name": "n",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {}
+}

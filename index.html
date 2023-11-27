@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SENAR</title>
+  <link rel="stylesheet" href="assets/styles/dist/framework.min.css" media="screen">
+  <link rel="stylesheet" href="assets/styles/dist/global.min.css" media="screen">
+  <script src="assets/scripts/dist/modernizr.js"></script>
+</head>
+
+<body class="body" data-activity-percent="">
+
+  <main class="main">
+    <section>
+
+
+
+      <div class="scenario-sequential-block display-none">
+        <div class="scenario-sequential-block-content-1024">
+
+          <!-- data-scenes= [ [imagem-personagem , texto-da-cena] ] -->
+          <!-- EXEMPLO das CENAS =      0      1      2      3      4     -->
+          <!-- EXEMPLO: data-scenes='[[0,1], [1,1], [2,2], [3,3], [4,6]]' -->
+          <div class="display-none data-scenes" data-scenes='[[0,1], [1,1], [2,2], [3,3], [4,6]]'></div>
+          <!-- data-scenes= [ [imagem-personagem , texto-da-cena] ] -->
+
+          <div class="scenario-sequential-block-character">
+            <!-- IMAGEM DE CONTROLE/ALERTA PARA IDENTIFICAR ONDE FALTOU DEFINIR UMA IMAGEM DA CENA -->
+            <img src="assets/images/fke/no-scene.png" alt="" class="img-character no-img-character">
+            <!-- IMAGEM DE CONTROLE/ALERTA PARA IDENTIFICAR ONDE FALTOU DEFINIR UMA IMAGEM DA CENA --><img
+              src="assets/images/fke/person-1.png" alt="" class="img-character img-character-1">
+
+            <img src="assets/images/fke/person-2.png" alt="" class="img-character img-character-2">
+            <img src="assets/images/fke/person-3.png" alt="" class="img-character img-character-3">
+            <img src="assets/images/fke/person-4.png" alt="" class="img-character img-character-4">
+          </div>
+
+          <div class="scenario-sequential-block-text">
+            <div class="scenario-sequential-block-text-inner">
+              <p class="inner-text">
+
+                <!-- TEXTO DE CONTROLE/ALERTA PARA IDENTIFICAR ONDE FALTOU DEFINIR UM TEXTO DA CENA -->
+                <span class="scenario-sequential-text scenario-sequential-no-text">TEXTO NÃO DEFINIDO PARA A CENA ATUAL:
+                  [<span class="alert-scene-text"></span>]</span>
+                <!-- TEXTO DE CONTROLE/ALERTA PARA IDENTIFICAR ONDE FALTOU DEFINIR UM TEXTO DA CENA -->
+
+                <span class="scenario-sequential-text scenario-sequential-text-1">CENA 1 "Would you care to start with
+                  an appetizer tonight? Our chef has prepared a delicious lobster bisque. It's my favorite thing on the
+                  menu."</span>
+                <span class="scenario-sequential-text scenario-sequential-text-2">CENA 2 Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Sit, vel.</span>
+                <span class="scenario-sequential-text scenario-sequential-text-3">CENA 3 Lorem ipsum dolor sit amet.
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
+                <span class="scenario-sequential-text scenario-sequential-text-4">CENA 4 Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Amet, odit ultima. Lorem ipsum dolor sit amet.</span>
+                <span class="scenario-sequential-final-text scenario-sequential-text scenario-sequential-text-5"> CENA 5
+                  - FIM - Scenario Finalizado!</span>
+              </p>
+              <div class="scenario-sequential-block-action-buttons">
+                <button class="btn btn-continue active">Continuar</button>
+                <button class="btn btn-restart">Recomeçar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="agrodesafio">
+        <h2 class="content-1024">Agrodesafio</h2>
+        <div class="scenario-decision-block">
+
+          <div class="scenario-decision-block-content-1024">
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+              <source src="./assets/images/fke/video-back.mp4" type="video/mp4">
+            </video>
+
+            <!-- <div class="dialogues-topper"></div> -->
+
+            <div class="scenario-decision-dialogue-block"></div>
+
+            <div class="scenario-decision-scenes">
+
+              <div class="decision-scenes scene-01">
+                <p class="dialogue-question">Olá, meu nome é Maria, e Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Dolore ipsum aspernatur aut dolorem adipisci eligendi minus eius neque nulla.
+                  Sequi?:</p>
+
+                <div class="wrapper-buttons">
+                  <p class="dialogue-button" data-dialog-next="scene-02">OK! Vamos lá!</p>
+                  <p class="dialogue-button" data-dialog-next="scene-01-01">Não, preciso de mais informações!</p>
+                </div>
+
+                <div class="feedback-scene scene-01-01">
+                  <p class="dialogue-question">Feedback, Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                    sequi.</p>
+
+                  <div class="wrapper-buttons">
+                    <p class="dialogue-button" data-dialog-next="scene-01">Tentar de novo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decision-scenes scene-02">
+                <p class="dialogue-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nam
+                  facilis accusamus maxime obcaecati nulla.</p>
+
+                <div class="wrapper-buttons">
+                  <p class="dialogue-button" data-dialog-next="scene-03">Lorem ipsum dolor sit amet.</p>
+                  <p class="dialogue-button" data-dialog-next="scene-02-01">Não entendi!</p>
+                </div>
+
+                <div class="feedback-scene scene-02-01">
+                  <p class="dialogue-question">Resposta errada! Tente novamente.</p>
+
+                  <div class="wrapper-buttons">
+                    <p class="dialogue-button" data-dialog-next="scene-02">Tentar de novo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decision-scenes scene-03">
+                <p class="dialogue-question">Opa. Que legal! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas quia sequi illo soluta numquam sunt doloremque harum illum, doloribus et?</p>
+                <!-- Mais opções e ações para a resposta correta -->
+
+                <div class="wrapper-buttons">
+                  <p class="dialogue-button" data-dialog-next="scene-04">Lorem ipsum dolor sit.</p>
+                  <p class="dialogue-button" data-dialog-next="scene-03-01">Não entendi!</p>
+                </div>
+
+                <div class="feedback-scene scene-03-01">
+                  <p class="dialogue-question">Procure Lorem ipsum dolor sit amet consectetur..</p>
+
+                  <div class="wrapper-buttons">
+                    <p class="dialogue-button" data-dialog-next="scene-03">Tentar de novo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decision-scenes scene-04">
+                <p class="dialogue-question">E agora? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut,
+                  incidunt?</p>
+                <!-- Mais opções e ações para a resposta correta -->
+
+                <div class="wrapper-buttons">
+                  <p class="dialogue-button" data-dialog-next="scene-05">Finalizar.</p>
+                  <p class="dialogue-button" data-dialog-next="scene-04-01">Avançar para feedback.</p>
+                </div>
+
+                <div class="feedback-scene scene-04-01">
+                  <p class="dialogue-question">Feedback.</p>
+
+                  <div class="wrapper-buttons">
+                    <p class="dialogue-button" data-dialog-next="scene-04">Tentar de novo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="decision-scenes scene-05">
+                <p class="dialogue-question">Obrigado, até mais!</p>
+              </div>
+
+            </div>
+
+            <div class="scenario-decision-block-character">
+              <img src="assets/images/fke/no-scene.png" alt="" class="img-character">
+              <img src="assets/images/fke/person-10.png" alt="" class="img-character initial"
+                data-decision-character='["scene-01", "scene-01-01"]'>
+              <img src="assets/images/fke/person-11.png" alt="" class="img-character"
+                data-decision-character='["scene-02", "scene-02-01"]'>
+              <img src="assets/images/fke/person-10.png" alt="" class="img-character"
+                data-decision-character='["scene-03", "scene-03-01"]'>
+              <img src="assets/images/fke/person-11.png" alt="" class="img-character"
+                data-decision-character='["scene-04", "scene-04-01"]'>
+              <img src="assets/images/fke/person-10.png" alt="" class="img-character"
+                data-decision-character='["scene-05", "scene-05-01"]'>
+              <img src="assets/images/fke/person-11.png" alt="" class="img-character"
+                data-decision-character='["scene-06", "scene-06-01"]'>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="py-50"></div>
+
+    </section>
+  </main>
+
+  <script src="assets/scripts/dist/polyfill.min.js"></script>
+  <script src="assets/scripts/dist/jquery-3.6.0.min.js"></script>
+  <script src="assets/scripts/dist/APIWrapper.js"></script>
+  <script src="assets/scripts/dist/SCOFunctions.js"></script>
+  <script src="assets/scripts/dist/framework.min.js"></script>
+  <!-- <script src="assets/scripts/dist/framework-scorm.min.js"></script> -->
+  <script src="assets/scripts/dist/global.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+body {
+  background: #fff;
+  color: #4d4d4d;
+  font-family: 'Verdana';
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+  GLOBAL CONTROLLERS
+========================================================================== */
+
+.alert {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #7d240e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.491);
+  height: 100%;
+  margin: 30px auto 0;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.img-max {
+  max-width: 100% !important;
+}
+
+.content-1024 {
+  overflow: initial;
+}
+
+.z-index-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-4 {
+  position: relative;
+  z-index: 4;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+.z-index-6 {
+  position: relative;
+  z-index: 6;
+}
+
+.z-index-7 {
+  position: relative;
+  z-index: 7;
+}
+
+.z-index-8 {
+  position: relative;
+  z-index: 8;
+}
+
+.z-index-9 {
+  position: relative;
+  z-index: 9;
+}
+
+.z-index-10 {
+  position: relative;
+  z-index: 10;
+}
+
+.display-none {
+  display: none;
+}
+
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+
+.dialogue-button.was-clicked {
+  /* border: 10px solid red; */
+}
+
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+/* CONTROLE CONTROLE */
+
+.agrodesafio {
+  background: #BCDC59 url('../../images/fke/bkg-scenario.svg') center/cover no-repeat;
+  max-width: 1920px;
+  padding-top: 55px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.agrodesafio:after {
+  content: '';
+  background: url('../../images/fke/scenario-after.svg') center/contain no-repeat;
+  width: 1147px;
+  height: 44px;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+h2 {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 95px;
+  text-align: left;
+  color: #006853;
+
+}
+
+.scenario-sequential-block,
+.scenario-decision-block {
+  width: 100%;
+  max-width: 1920px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.scenario-sequential-block-content-1024,
+.scenario-decision-block-content-1024 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+  overflow: initial;
+  width: 100%;
+  position: relative;
+  height: 650px;
+  padding: 40px 65px;
+  /* background: url('../../images/fke/bkg-block.png') center/contain no-repeat; */
+  border-radius: 130px 50px;
+}
+
+.scenario-sequential-block-character .img-character,
+.scenario-decision-block-character .img-character {
+  width: auto;
+  max-width: 100%;
+  max-height: 612px;
+  position: relative;
+  bottom: 0px;
+  left: 80px;
+  margin-right: auto;
+  display: none;
+}
+
+.scenario-sequential-block-character .img-character.active,
+.scenario-decision-block-character .img-character.active {
+  display: block;
+  position: absolute;
+  /* animation: float 10s infinite ease-in-out; */
+  filter: drop-shadow(1px 1px 10px #000000);
+}
+
+.scenario-sequential-block-text {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  min-width: 320px;
+}
+
+.scenario-sequential-block-text-inner {
+  background-color: #fff;
+  border-radius: .3rem;
+  box-shadow: 0 .2rem 2.5rem 0 rgba(0, 0, 0, .15);
+  box-sizing: border-box;
+  padding: 5rem 3.5rem 3.5rem;
+  max-width: 68rem;
+  text-align: center;
+  width: 100%;
+}
+
+.scenario-sequential-final-text {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: .06rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  font-family: Roboto !important;
+}
+
+.scenario-sequential-block-text-inner .inner-text {
+  margin-bottom: 3rem;
+}
+
+.scenario-sequential-block-text-inner .inner-text .scenario-sequential-text {
+  display: none;
+}
+
+.scenario-sequential-block-text-inner .inner-text .scenario-sequential-text.active {
+  display: block;
+}
+
+.btn.btn-restart {
+  position: relative;
+}
+
+.btn.btn-restart:before {
+  content: "\2192";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -45px;
+  font-size: 28px;
+  font-family: "Verdana", sans-serif;
+  color: #24121a;
+}
+
+.scenario-sequential-block-action-buttons .btn {
+  display: none;
+  border: .2rem solid transparent;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  font-family: lato, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 3.5rem;
+  letter-spacing: .04em;
+  line-height: 3rem;
+  max-width: 13.5rem;
+  min-width: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: opacity .3s, max-width .3s;
+  width: 100%;
+
+}
+
+.scenario-sequential-block-action-buttons .btn.active {
+  display: unset;
+}
+
+.scenario-sequential-block-action-buttons .btn-continue {
+  background-color: #E92979 !important;
+}
+
+.scenario-sequential-block-action-buttons .btn.btn-restart {
+  background-color: #24121a !important;
+}
+
+.scenario-decision-dialogue-block {
+  /* border: 1px solid rgba(255, 0, 0, 0.514); */
+  width: 70%;
+  right: 0;
+  margin-left: auto;
+  height: 60%;
+  position: absolute;
+  overflow-y: hidden;
+  /* padding: 20px 10% 0; */
+  top: 10%;
+}
+
+.dialogues-topper {
+  /* border: 1px solid red; */
+  height: 70px;
+  position: absolute;
+  width: 70%;
+  padding: 0 10% 0;
+  right: 0;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.scenario-decision-dialogue-block .dialogue {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 60px;
+  padding: 20px 10px;
+  /* box-shadow: 0 0 10px #00000065; */
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.5s, transform 0.5s;
+  max-width: 466px;
+  right: 60px;
+  margin-left: auto;
+}
+
+.scenario-decision-dialogue-block .dialogue.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: aparecer-animacao 0.5s ease;
+  bottom: 0;
+}
+
+@keyframes aparecer-animacao {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scenario-decision-dialogue-block .dialogue:nth-child(even) {
+  border-radius: 30px 30px 0 30px;
+  border: 2px solid #bcdc59;
+  background-color: #F2F8DE;
+}
+
+.scenario-decision-dialogue-block .dialogue:first-child {
+  animation: aparecer-animacao 0.5s ease;
+  border: 2px solid #bcdc59;
+  bottom: 0;
+}
+
+.scenario-decision-dialogue-block .dialogue:nth-child(odd) {
+  border: 2px solid #bcdc59;
+  border-radius: 30px 30px 30px 0px;
+}
+
+
+.scenario-decision-scenes .dialogue-question {
+  display: none;
+}
+
+.scenario-decision-scenes .wrapper-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 60px;
+  right: 65px;
+}
+
+.scenario-decision-scenes .wrapper-buttons .dialogue-button {
+  border-radius: 28px 28px 0px 28px;
+  border: 2px solid #fff;
+  padding: 17px 20px;
+  position: relative;
+  display: block;
+  transition: all ease 300ms;
+}
+
+.scenario-decision-scenes .wrapper-buttons .dialogue-button:hover {
+  box-shadow: 0 0 20px #000000b9;
+  cursor: pointer;
+
+}
+
+.scenario-decision-scenes .wrapper-buttons .dialogue-button:nth-child(odd) {
+  background-color: #006853;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.scenario-decision-scenes .wrapper-buttons .dialogue-button:nth-child(even) {
+  background-color: #840005;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.decision-scenes,
+.decision-scenes .feedback-scene .dialogue-question,
+.decision-scenes .feedback-scene .wrapper-buttons {
+  display: none;
+}
+
+.decision-scenes.active,
+.decision-scenes .feedback-scene.active .wrapper-buttons {
+  display: flex;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-3px) scale(1.03);
+    /* Ajuste a altura e o zoom conforme necessário */
+  }
+}
