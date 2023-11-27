@@ -161,7 +161,7 @@ h2 {
   position: relative;
   height: 650px;
   padding: 40px 65px;
-  /* background: url('../../images/fke/bkg-block.png') center/contain no-repeat; */
+  background: url('../../images/fke/bkg-block.png') center/contain no-repeat;
   border-radius: 130px 50px;
 }
 
